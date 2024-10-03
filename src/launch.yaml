@@ -5,4 +5,4 @@ launch:
     pkg: "decipher_pubsub"
     exec: "cipher"
     name: "cipher"
-    namespace: "ciphernode1"
+    namespace: "cipher"
