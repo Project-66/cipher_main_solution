@@ -1,0 +1,10 @@
+
+
+launch:
+
+# start a node in the turtle namespace
+- node:
+    pkg: "decipher_pubsub"
+    exec: "cipher"
+    name: "cipher"
+    namespace: "ciphernode1"
