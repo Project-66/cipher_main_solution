@@ -17,16 +17,8 @@ find_package(cipher_interfaces REQUIRED)
 add_executable(listener src/cipher_subscriber_function.cpp)
 ament_target_dependencies(listener rclcpp cipher_interfaces)
 
-add_executable(talker src/cipher_publisher_function.cpp)
-ament_target_dependencies(talker rclcpp cipher_interfaces)
-
-add_executable(server src/cipher_service_function.cpp)
-ament_target_dependencies(server rclcpp cipher_interfaces)
-
 install(TARGETS
   listener
-  talker
-  server
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
